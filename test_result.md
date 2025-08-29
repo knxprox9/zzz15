@@ -101,3 +101,68 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+---
+user_problem_statement: "Extract the uploaded ZIP into /app, delete the original ZIP, set extracted content as active working directory. Then install dependencies and run services via supervisor."
+backend:
+  - task: "Install backend dependencies"
+    implemented: true
+    working: true
+    file: "/app/backend/requirements.txt"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      -working: true
+      -agent: "main"
+      -comment: "Installed Python deps with pip. Backend started via supervisor. Health checks passed: GET /api returns Hello World; POST/GET /api/status inserted and retrieved Mongo document."
+  - task: "Run backend service"
+    implemented: true
+    working: true
+    file: "/var/log/supervisor/backend.out.log"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      -working: true
+      -agent: "main"
+      -comment: "Supervisor shows backend RUNNING on 0.0.0.0:8001; uvicorn logs healthy."
+frontend:
+  - task: "Install frontend dependencies"
+    implemented: true
+    working: true
+    file: "/app/frontend/package.json"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      -working: true
+      -agent: "main"
+      -comment: "Installed yarn deps; dev server compiled successfully under supervisor."
+  - task: "Run frontend service"
+    implemented: true
+    working: true
+    file: "/var/log/supervisor/frontend.out.log"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      -working: true
+      -agent: "main"
+      -comment: "Supervisor shows frontend RUNNING; preview booting page visible."
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: true
+
+test_plan:
+  current_focus:
+    - "Verify frontend home loads after preview screens warm up"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  -agent: "main"
+  -message: "Extraction complete, dependencies installed, backend and frontend restarted via supervisor. Ready for next tasks."
