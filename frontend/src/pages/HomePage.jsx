@@ -170,9 +170,7 @@ const HomePage = () => {
           alignItems: 'center',
           justifyContent: 'center',
           textAlign: 'center',
-          overflow: 'visible',
-          padding: '6px 12px',
-          
+          overflow: 'visible'
         }}>
      <div style={{ 
        width: '100%',
