@@ -205,6 +205,16 @@ code {
 
 /* removed typewriter per user revert */
 
+/* Soft transparent shadow around header icons */
+.icon-soft-shadow {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10), 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 200ms ease;
+}
+.icon-soft-shadow:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
 /* Typewriter RTL hero title — removed on user request */
 
 .tm-pulse-soft { animation: tm-pulse-soft 2.6s ease-in-out infinite; }
