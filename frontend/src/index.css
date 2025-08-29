@@ -158,6 +158,9 @@ code {
   }
   /* Reduce gap by pulling the paragraph up while keeping the title fixed */
   .hero-subtitle {
+  /* Increase mobile badge paddings for better breathing room */
+  .hero-title-badge { padding: 10px 16px !important; border-radius: 14px !important; }
+
     margin-top: -10px !important;
   }
 }
