@@ -35,7 +35,7 @@ const TopBar = () => {
  aria-label="إنستغرام"
  className="p-1 rounded text-gray-600 hover:text-orange-600 transition-colors icon-soft-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100"
  >
- <Instagram className="w-4 h-4" strokeWidth="2.5" />
+ <Instagram className="icon-slightly-larger" strokeWidth="2.5" />
  </a>
  <a
  href="https://wa.me/+967779995884"
