@@ -33,7 +33,7 @@ const TopBar = () => {
  target="_blank"
  rel="noopener noreferrer"
  aria-label="إنستغرام"
- className="p-1 rounded text-gray-600 hover:text-orange-600 transition-colors icon-soft-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100"
+ className="p-1 rounded text-gray-600 hover:text-orange-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100"
  >
  <Instagram className="icon-slightly-larger" strokeWidth="2.5" />
  </a>
