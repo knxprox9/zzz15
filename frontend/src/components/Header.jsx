@@ -267,7 +267,7 @@ const Header = () => {
  to={link.path}
  onClick={() => setIsMenuOpen(false)}
  aria-label={link.label}
- className={`flex items-center justify-center rounded-full w-8 h-8 bg-white shadow-[0_8px_24px_rgba(0,0,0,0.10)] ring-1 ring-black/5 transition-all duration-200 hover:shadow-[0_12px_32px_rgba(0,0,0,0.14)] ${active ? 'text-yellow-600' : 'text-gray-700'}`}
+ className={`flex items-center justify-center rounded-full w-8 h-8 bg-white shadow-[0_8px_24px_rgba(0,0,0,0.10)] ring-1 ring-black/5 transition-all duration-200 hover:shadow-[0_12px_32px_rgba(0,0,0,0.14)] icon-soft-shadow ${active ? 'text-yellow-600' : 'text-gray-700'}`}
  style={{ pointerEvents: 'auto' }}
  >
  <IconComp className="w-5 h-5" strokeWidth={2.5} />
