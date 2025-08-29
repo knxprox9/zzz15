@@ -176,6 +176,9 @@ code {
     max-height: 56px !important;
     padding: 12px 20px !important; /* more inner space on sides */
   }
+  /* Preserve spacing between two hero buttons while allowing inner growth */
+  .hero-btns-grid { column-gap: 2rem !important; }
+
 
     margin-top: -8px !important;
   }
