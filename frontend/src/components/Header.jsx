@@ -248,7 +248,7 @@ const Header = () => {
  aria-label={isMenuOpen ? 'إغلاق القائمة' : 'فتح القائمة'}
  className="relative w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-700 shadow-[0_8px_24px_rgba(0,0,0,0.10)] ring-1 ring-black/5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.14)] transition-colors icon-soft-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
  >
- {isMenuOpen ? <CloseIcon className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+ {isMenuOpen ? <CloseIcon className="icon-slightly-larger" /> : <Menu className="icon-slightly-larger" />}
 
  {/* القوائم العائمة للأجهزة الصغيرة - أيقونات دائرية عمودية */}
  {isMenuOpen && (
