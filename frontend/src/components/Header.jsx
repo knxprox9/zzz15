@@ -24,7 +24,7 @@ const TopBar = () => {
  target="_blank"
  rel="noopener noreferrer"
  aria-label="إكس"
- className="p-1 rounded text-gray-600 hover:text-yellow-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100"
+ className="p-1 rounded text-gray-600 hover:text-yellow-600 transition-colors icon-soft-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100"
  >
  <X className="w-4 h-4" strokeWidth="2.5" />
  </a>
