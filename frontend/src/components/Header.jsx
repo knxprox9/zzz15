@@ -201,7 +201,7 @@ const Header = () => {
  </div>
  <div className="-ml-1">
  <h1 className="text-[1.6rem] sm:text-2xl font-extrabold font-alarabiya bg-clip-text text-transparent bg-gradient-to-r from-[#06213C] via-[#1E40AF] to-[#3B82F6]">الأسطورة أونلاين</h1>
- <p className="text-[12px] text-gray-500 font-semibold">لخدمات الدفع الألكتروني</p>
+
  </div>
  </Link>
 
