@@ -79,7 +79,7 @@ const TopBar = () => {
  >
  73 999 5884
  </a>
- <Phone className="icon-slightly-larger text-gray-600" strokeWidth="2.5" />
+ <Phone className="w-4 h-4 text-gray-600" strokeWidth="2.5" />
  </div>
  </div>
  </div>
