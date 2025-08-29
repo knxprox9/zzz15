@@ -215,6 +215,23 @@ code {
 }
 
 
+/* Slightly larger icon utility used in header */
+.icon-slightly-larger { width: 1.15rem !important; height: 1.15rem !important; }
+
+/* Ultra subtle outline around circular icon buttons */
+.icon-soft-shadow,
+.icon-soft-shadow:focus-visible {
+  outline: 1px solid rgba(0,0,0,0.06);
+  outline-offset: -1px;
+}
+
+/* Add faint glow on interactive circle buttons */
+.icon-soft-shadow:hover,
+.icon-soft-shadow:focus-visible {
+  box-shadow: 0 12px 28px rgba(0,0,0,0.14), 0 4px 12px rgba(0,0,0,0.08), 0 0 0 2px rgba(214,182,97,0.08);
+}
+
+
 /* Typewriter RTL hero title — removed on user request */
 
 .tm-pulse-soft { animation: tm-pulse-soft 2.6s ease-in-out infinite; }
