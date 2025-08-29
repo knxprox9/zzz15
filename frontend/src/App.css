@@ -145,6 +145,12 @@ body { font-family: var(--font-family); background-color: var(--bg-color); color
 @media (min-width: 768px) { .phone-dock { --dock-h: 52px; --icon: 31px; --dock-w: 80%; --dock-gap: 30px; } }
 /* removed xl breakpoint: @media (min-width: 1280px) { .phone-dock { --dock-h: 54px; --icon: 32px; --dock-w: 78%; --dock-gap: 34px; } } */
 
+
+/* Slightly larger badge paddings for small tablets */
+@media (min-width: 481px) and (max-width: 640px) {
+  .hero-title-badge { padding: 10px 18px !important; display: inline-flex; align-items: center; }
+}
+
 /* ---- In-screen interactive UI (without changing outer design) ---- */
 .phone-ui-btn { pointer-events: auto; }
 .phone-ui-layer { position: absolute; inset: 0; z-index: 10; pointer-events: none; }
