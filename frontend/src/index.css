@@ -168,6 +168,15 @@ code {
 /* Fine-tune for small tablets */
 @media (min-width: 481px) and (max-width: 640px) {
   .hero-subtitle {
+
+  /* Mobile: make hero buttons slightly taller and roomier without affecting layout/gap */
+  .hero-button {
+    height: 56px !important;
+    min-height: 56px !important;
+    max-height: 56px !important;
+    padding: 12px 20px !important; /* more inner space on sides */
+  }
+
     margin-top: -8px !important;
   }
 }
