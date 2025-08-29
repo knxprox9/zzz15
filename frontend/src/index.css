@@ -185,20 +185,6 @@ code {
 }
 
 
-/* Mobile-only: increase padding on outer edges of the two hero buttons without affecting gap */
-@media (max-width: 480px) {
-  /* First (right) button in RTL: add padding on the outer (right) edge */
-  .hero-btns-grid .hero-button:first-child {
-    padding-inline-start: 26px !important; /* right in RTL */
-    padding-inline-end: 18px !important;   /* left in RTL */
-  }
-  /* Second (left) button in RTL: add padding on the outer (left) edge */
-  .hero-btns-grid .hero-button:last-child {
-    padding-inline-end: 26px !important;   /* left in RTL */
-    padding-inline-start: 18px !important; /* right in RTL */
-  }
-}
-
 
 /* Glowing orb animation circling the badge */
 .hero-title-badge {
