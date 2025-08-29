@@ -17,7 +17,7 @@ const TopBar = () => {
  aria-label="فيسبوك"
  className="p-1 rounded text-gray-600 hover:text-yellow-600 transition-colors icon-soft-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100"
  >
- <Facebook className="w-4 h-4" strokeWidth="2.5" />
+ <Facebook className="icon-slightly-larger" strokeWidth="2.5" />
  </a>
  <a
  href="https://x.com"
